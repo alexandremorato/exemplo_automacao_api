@@ -1,0 +1,4 @@
+all: --format html --out report/all.html --format progress 
+cadastro: --tag @cadastro --format html --out report/cadastro.html --format progress
+excluir: --tag @excluir --format html --out report/excluir.html --format progress
+ci: --format json --out report/ci.json --format progress

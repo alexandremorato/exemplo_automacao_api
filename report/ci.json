@@ -1,0 +1,152 @@
+[
+  {
+    "uri": "features/specifications/exclusao_empregado.feature",
+    "id": "exclusão-de-empregado",
+    "keyword": "Funcionalidade",
+    "name": "Exclusão de empregado",
+    "description": "Como serviço \nPreciso que seja criado uma funcionalidade para exclusão de empregados\nPara que seja possivel a exclusão de empregados especificos",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@excluir",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que exista um empregado cadastrado",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1466555552
+            }
+          }
+        ]
+      },
+      {
+        "id": "exclusão-de-empregado;exclusão-de-empregado-cadastrado",
+        "keyword": "Cenário",
+        "name": "Exclusão de empregado cadastrado",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@excluir",
+            "line": 2
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "realizar a exclusão de um empregado",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 713850418
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a exclusão deve ser realizado com sucesso",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718221545
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que exista um empregado cadastrado",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 646407479
+            }
+          }
+        ]
+      },
+      {
+        "id": "exclusão-de-empregado;tentativa-de-exclusão-de-empregado-já-excluido",
+        "keyword": "Cenário",
+        "name": "Tentativa de exclusão de empregado já excluido",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@excluir",
+            "line": 2
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "realizar a exclusão de um empregado",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 681110561
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "tentar excluir novamente o empregado",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630763101
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "o serviço não deve permitir a exclusão",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/delete_employee_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 321417
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
